@@ -6,7 +6,7 @@ A mod manager that lets you install and update mods in a few clicks, make and ma
 In the code, it's actually known as "Minecraft Mod Manager." That's because I started working on the project before I resolved that I should name it "InstallerCraft." (One of my previous released batch files was also called InstallerCraft, so I was originally reluctant to use that name.)
 
 Forking
-=======
+-------
 
 I intend to use the MIT License to let people fork this project and use it for other games like Kerbal Space Program that are also in need of a good mod manager.
 
