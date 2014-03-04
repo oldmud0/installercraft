@@ -29,14 +29,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.mainMenuInstalledMods = new System.Windows.Forms.MainMenu(this.components);
-            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.menuItemFile = new System.Windows.Forms.MenuItem();
             this.menuItemImportMod = new System.Windows.Forms.MenuItem();
-            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.menuItemSep1 = new System.Windows.Forms.MenuItem();
             this.menuItemClose = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItemModsMenu = new System.Windows.Forms.MenuItem();
             this.menuItemDeleteMod = new System.Windows.Forms.MenuItem();
             this.menuItemCheckForUpdate = new System.Windows.Forms.MenuItem();
-            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.menuItemSep2 = new System.Windows.Forms.MenuItem();
             this.menuItemEnabled = new System.Windows.Forms.MenuItem();
             this.objectListViewInstalledMods = new BrightIdeasSoftware.ObjectListView();
             this.olvColumnName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -47,27 +47,27 @@
             // mainMenuInstalledMods
             // 
             this.mainMenuInstalledMods.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.menuItem1,
-            this.menuItem2});
+            this.menuItemFile,
+            this.menuItemModsMenu});
             // 
-            // menuItem1
+            // menuItemFile
             // 
-            this.menuItem1.Index = 0;
-            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItemFile.Index = 0;
+            this.menuItemFile.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItemImportMod,
-            this.menuItem4,
+            this.menuItemSep1,
             this.menuItemClose});
-            this.menuItem1.Text = "File";
+            this.menuItemFile.Text = "File";
             // 
             // menuItemImportMod
             // 
             this.menuItemImportMod.Index = 0;
             this.menuItemImportMod.Text = "Import Mod...";
             // 
-            // menuItem4
+            // menuItemSep1
             // 
-            this.menuItem4.Index = 1;
-            this.menuItem4.Text = "-";
+            this.menuItemSep1.Index = 1;
+            this.menuItemSep1.Text = "-";
             // 
             // menuItemClose
             // 
@@ -76,15 +76,15 @@
             this.menuItemClose.Text = "Close";
             this.menuItemClose.Click += new System.EventHandler(this.menuItemClose_Click);
             // 
-            // menuItem2
+            // menuItemModsMenu
             // 
-            this.menuItem2.Index = 1;
-            this.menuItem2.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItemModsMenu.Index = 1;
+            this.menuItemModsMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItemDeleteMod,
             this.menuItemCheckForUpdate,
-            this.menuItem3,
+            this.menuItemSep2,
             this.menuItemEnabled});
-            this.menuItem2.Text = "Mod";
+            this.menuItemModsMenu.Text = "Mod";
             // 
             // menuItemDeleteMod
             // 
@@ -97,10 +97,10 @@
             this.menuItemCheckForUpdate.Index = 1;
             this.menuItemCheckForUpdate.Text = "Check for Update";
             // 
-            // menuItem3
+            // menuItemSep2
             // 
-            this.menuItem3.Index = 2;
-            this.menuItem3.Text = "-";
+            this.menuItemSep2.Index = 2;
+            this.menuItemSep2.Text = "-";
             // 
             // menuItemEnabled
             // 
@@ -116,6 +116,7 @@
             this.olvColumnName,
             this.olvColumnVersion});
             this.objectListViewInstalledMods.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.objectListViewInstalledMods.FullRowSelect = true;
             this.objectListViewInstalledMods.Location = new System.Drawing.Point(0, 0);
             this.objectListViewInstalledMods.Name = "objectListViewInstalledMods";
             this.objectListViewInstalledMods.Size = new System.Drawing.Size(310, 375);
@@ -159,17 +160,17 @@
         #endregion
 
         private System.Windows.Forms.MainMenu mainMenuInstalledMods;
-        private System.Windows.Forms.MenuItem menuItem1;
-        private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.MenuItem menuItemFile;
+        private System.Windows.Forms.MenuItem menuItemModsMenu;
         private BrightIdeasSoftware.ObjectListView objectListViewInstalledMods;
         private BrightIdeasSoftware.OLVColumn olvColumnName;
         private BrightIdeasSoftware.OLVColumn olvColumnVersion;
         private System.Windows.Forms.MenuItem menuItemImportMod;
-        private System.Windows.Forms.MenuItem menuItem4;
+        private System.Windows.Forms.MenuItem menuItemSep1;
         private System.Windows.Forms.MenuItem menuItemClose;
         private System.Windows.Forms.MenuItem menuItemDeleteMod;
         private System.Windows.Forms.MenuItem menuItemCheckForUpdate;
-        private System.Windows.Forms.MenuItem menuItem3;
+        private System.Windows.Forms.MenuItem menuItemSep2;
         private System.Windows.Forms.MenuItem menuItemEnabled;
     }
 }

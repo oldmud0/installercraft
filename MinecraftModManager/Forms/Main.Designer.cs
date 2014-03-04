@@ -79,12 +79,12 @@ namespace MinecraftModManager
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.modsObjectListView);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(610, 251);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(610, 209);
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 26);
             this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(610, 298);
+            this.toolStripContainer1.Size = new System.Drawing.Size(610, 256);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -124,11 +124,12 @@ namespace MinecraftModManager
             this.modRatingColumn,
             this.modDownloadsColumn});
             this.modsObjectListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.modsObjectListView.FullRowSelect = true;
             this.modsObjectListView.Location = new System.Drawing.Point(0, 0);
             this.modsObjectListView.MultiSelect = false;
             this.modsObjectListView.Name = "modsObjectListView";
             this.modsObjectListView.OwnerDraw = true;
-            this.modsObjectListView.Size = new System.Drawing.Size(610, 251);
+            this.modsObjectListView.Size = new System.Drawing.Size(610, 209);
             this.modsObjectListView.TabIndex = 0;
             this.modsObjectListView.UseCompatibleStateImageBehavior = false;
             this.modsObjectListView.View = System.Windows.Forms.View.Details;
@@ -138,15 +139,16 @@ namespace MinecraftModManager
             // 
             this.modNameColumn.AspectName = "Name";
             this.modNameColumn.CellPadding = null;
+            this.modNameColumn.FillsFreeSpace = true;
             this.modNameColumn.Text = "Name";
-            this.modNameColumn.Width = 289;
+            this.modNameColumn.Width = 286;
             // 
             // modAuthorColumn
             // 
             this.modAuthorColumn.AspectName = "Author";
             this.modAuthorColumn.CellPadding = null;
             this.modAuthorColumn.Text = "Author";
-            this.modAuthorColumn.Width = 92;
+            this.modAuthorColumn.Width = 139;
             // 
             // modRatingColumn
             // 
@@ -305,7 +307,7 @@ namespace MinecraftModManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 324);
+            this.ClientSize = new System.Drawing.Size(610, 282);
             this.Controls.Add(this.cueTextBox1);
             this.Controls.Add(this.toolStripContainer1);
             this.Icon = global::MinecraftModManager.Properties.Resources.InstallerCraft;
