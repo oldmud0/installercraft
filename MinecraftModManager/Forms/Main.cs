@@ -145,6 +145,11 @@ namespace MinecraftModManager
             System.Diagnostics.Process.Start("http://www.github.com/oldmud0/installercraft/issues/");
         }
 
+        private void menuItemModProfileNew_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

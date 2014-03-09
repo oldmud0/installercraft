@@ -41,8 +41,8 @@ namespace MinecraftModManager
             this.modDownloadsColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.mainMenu = new System.Windows.Forms.MainMenu(this.components);
             this.File = new System.Windows.Forms.MenuItem();
-            this.menuItem1 = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItemModProfileNew = new System.Windows.Forms.MenuItem();
+            this.menuItemModProfileLoad = new System.Windows.Forms.MenuItem();
             this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.menuItemExit = new System.Windows.Forms.MenuItem();
             this.Mods = new System.Windows.Forms.MenuItem();
@@ -79,12 +79,12 @@ namespace MinecraftModManager
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.modsObjectListView);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(610, 209);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(610, 188);
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 26);
             this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(610, 256);
+            this.toolStripContainer1.Size = new System.Drawing.Size(610, 235);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -129,7 +129,7 @@ namespace MinecraftModManager
             this.modsObjectListView.MultiSelect = false;
             this.modsObjectListView.Name = "modsObjectListView";
             this.modsObjectListView.OwnerDraw = true;
-            this.modsObjectListView.Size = new System.Drawing.Size(610, 209);
+            this.modsObjectListView.Size = new System.Drawing.Size(610, 188);
             this.modsObjectListView.TabIndex = 0;
             this.modsObjectListView.UseCompatibleStateImageBehavior = false;
             this.modsObjectListView.View = System.Windows.Forms.View.Details;
@@ -176,23 +176,24 @@ namespace MinecraftModManager
             // 
             this.File.Index = 0;
             this.File.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.menuItem1,
-            this.menuItem2,
+            this.menuItemModProfileNew,
+            this.menuItemModProfileLoad,
             this.menuItem3,
             this.menuItemExit});
             this.File.Text = "File";
             // 
-            // menuItem1
+            // menuItemModProfileNew
             // 
-            this.menuItem1.Index = 0;
-            this.menuItem1.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
-            this.menuItem1.Text = "New Mod Profile...";
+            this.menuItemModProfileNew.Index = 0;
+            this.menuItemModProfileNew.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
+            this.menuItemModProfileNew.Text = "New Mod Profile...";
+            this.menuItemModProfileNew.Click += new System.EventHandler(this.menuItemModProfileNew_Click);
             // 
-            // menuItem2
+            // menuItemModProfileLoad
             // 
-            this.menuItem2.Index = 1;
-            this.menuItem2.Shortcut = System.Windows.Forms.Shortcut.CtrlO;
-            this.menuItem2.Text = "Load Mod Profile...";
+            this.menuItemModProfileLoad.Index = 1;
+            this.menuItemModProfileLoad.Shortcut = System.Windows.Forms.Shortcut.CtrlO;
+            this.menuItemModProfileLoad.Text = "Load Mod Profile...";
             // 
             // menuItem3
             // 
@@ -307,7 +308,7 @@ namespace MinecraftModManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 282);
+            this.ClientSize = new System.Drawing.Size(610, 261);
             this.Controls.Add(this.cueTextBox1);
             this.Controls.Add(this.toolStripContainer1);
             this.Icon = global::MinecraftModManager.Properties.Resources.InstallerCraft;
@@ -338,8 +339,8 @@ namespace MinecraftModManager
         private System.Windows.Forms.MenuItem Mods;
         private System.Windows.Forms.MenuItem Tools;
         private System.Windows.Forms.MenuItem Help;
-        private System.Windows.Forms.MenuItem menuItem1;
-        private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.MenuItem menuItemModProfileNew;
+        private System.Windows.Forms.MenuItem menuItemModProfileLoad;
         private System.Windows.Forms.MenuItem menuItem3;
         private System.Windows.Forms.MenuItem menuItemExit;
         private System.Windows.Forms.MenuItem menuItem8;

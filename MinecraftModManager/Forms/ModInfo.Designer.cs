@@ -31,7 +31,7 @@
             this.pictureBoxModIcon = new System.Windows.Forms.PictureBox();
             this.labelModName = new System.Windows.Forms.Label();
             this.buttonInstall = new System.Windows.Forms.Button();
-            this.labelModDescription = new System.Windows.Forms.Label();
+            this.labelModDescription = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelDownloads = new System.Windows.Forms.Label();
@@ -82,15 +82,14 @@
             this.labelModDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelModDescription.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelModDescription.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelModDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.labelModDescription.Location = new System.Drawing.Point(13, 98);
+            this.labelModDescription.Multiline = true;
             this.labelModDescription.Name = "labelModDescription";
-            this.labelModDescription.Padding = new System.Windows.Forms.Padding(3);
+            this.labelModDescription.ReadOnly = true;
             this.labelModDescription.Size = new System.Drawing.Size(576, 178);
             this.labelModDescription.TabIndex = 3;
             this.labelModDescription.Text = "No mod description.";
-            this.labelModDescription.UseMnemonic = false;
             // 
             // labelID
             // 
@@ -213,7 +212,7 @@
         private System.Windows.Forms.PictureBox pictureBoxModIcon;
         private System.Windows.Forms.Label labelModName;
         private System.Windows.Forms.Button buttonInstall;
-        private System.Windows.Forms.Label labelModDescription;
+        private System.Windows.Forms.TextBox labelModDescription;
         private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label labelDownloads;

@@ -63,7 +63,7 @@ namespace MinecraftModManager
                 Downloads = 107491,
                 ID = 3,
                 LastUpdate = new DateTime(2014, 2, 5),
-                DownloadURI = "http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.2-10.12.0.1024/forge-1.7.2-10.12.0.1024-userdev.jar",
+                DownloadURI = "http://files.minecraftforge.net/fml/fml-universal-latest.jar",
                 ModURI = "http://www.minecraftforge.net/forum/index.php",
                 MinecraftVersion = "1.7.2",
                 Name = "Minecraft Forge",

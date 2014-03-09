@@ -24,6 +24,7 @@ namespace MinecraftModManager
         {
             Enabled = false;
             //Delete the mod from filesystem
+            InstalledModsList.ActiveInstalledModsList.Remove(this); //Remove the mod from the installed mods list
         }
 
         public void checkForUpdates()
